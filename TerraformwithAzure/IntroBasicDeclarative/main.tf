@@ -1,6 +1,15 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "=3.0.1"
+    }
+  }
+}
+
 #Define providers used
 provider "azurerm" {
-  version = "=2.11"
+  #version = "=2.11"
   features {} #This is required for v2 of the provider even if empty or plan will fail
 }
 
